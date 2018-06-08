@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>football field reservation</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/partials/jquery.formstyler.theme.css">
+    <link rel="stylesheet" href="css/partials/jquery.formstyler.css">
+    <link rel="stylesheet" href="css/partials/jquery-ui.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script src="js/partials/jquery.formstyler.js"></script>
+    <script src="js/partials/jquery-ui.js"></script>
+    <script src="js/main.js"></script>
+  </head>
+  <body>
+    <header class="container-fluid">
+      <div class="row">
+        <div class="navigation">
+          <div class="container">
+            <nav class="navbar navbar-default">
+              <div class="container-fluid">
+                <div class="navbar-header">
+                  <button class="navbar-toggle collapsed" type="button" data-toggle="collapse" data-target="#navbar" aria-expanded="false"><span class="sr-only">Toggle navigation.icon-bar</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button><a class="navbar-brand" href="#"><img src="img/LogoSmartSport.png" alt="logo"></a>
+                </div>
+                <div class="collapse navbar-collapse" id="navbar">
+                  <ul class="nav navbar-nav menu-first-part">
+                    <li><a href="#"><span class="sr-only" current></span>Objects</a></li>
+                    <li><a href="#">Hotels</a></li>
+                    <li><a href="#">Pakages</a></li>
+                    <li><a href="#">Events</a></li>
+                    <li class="disabled"><a href="#">Tickets</a></li>
+                    <li class="disabled"><a href="#">Transfer</a></li>
+                  </ul>
+                  <ul class="nav navbar-nav navbar-right menu-second-part">
+                    <li class="dropdown language"><a class="dropdown-toggle" href="#" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Eng<span class="caret"></span></a>
+                      <ul class="dropdown-menu">
+                        <li><a href="#">Ukr</a></li>
+                        <li><a href="#">Rus</a></li>
+                      </ul>
+                    </li>
+                    <li class="dropdown currency"><a class="dropdown-toggle" href="#" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">USD<span class="caret"></span></a>
+                      <ul class="dropdown-menu">
+                        <li><a href="#">UAH</a></li>
+                        <li><a href="#">RUB</a></li>
+                      </ul>
+                    </li>
+                    <li><a href="#"><i class="fas fa-user"></i>Sign in</a></li>
+                    <li class="li-icon"><a href="#"><i class="fas fa-info-circle"></i></a></li>
+                    <li class="li-icon"><a href="#"><i class="fas fa-question-circle"></i></a></li>
+                  </ul>
+                </div>
+              </div>
+            </nav>
+          </div>
+        </div>
+        <div class="banner-wrepp">
+          <div class="banner-wrepp__text container">
+            <div class="col-xs-12 col-sm-5"><a class="btn-back" href="#">Back</a></div>
+            <div class="col-xs-12 col-sm-7">
+              <h1>Football</h1>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main class="container-fluid">
+      <form class="container">
+        <div class="form-group form-group_left col-xs-12 col-md-6">
+          <div class="form-group__item team clearfix">
+            <div class="form-group__item__header col-xs-12 col-sm-4 col-md-3">
+              <div class="row">Team</div>
+            </div>
+            <div class="form-group__item__categories col-xs-12 col-sm-8 col-md-9">
+              <div class="row">
+                <table>
+                  <tr>
+                    <td class="categories__name"> 
+                      <label for="trainer">Trainer</label>
+                    </td>
+                    <td><i class="fas fa-user"></i></td>
+                    <td>
+                      <select id="trainer">
+                        <option value="2">2</option>
+                        <option value="1">1</option>
+                        <option value="3">3</option>
+                      </select>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="categories__name"> 
+                      <label for="athlet">Athlet</label>
+                    </td>
+                    <td><i class="fas fa-user"></i></td>
+                    <td>
+                      <select id="athlet">
+                        <option value="9">9</option>
+                        <option value="1">1</option>
+                        <option value="3">3</option>
+                      </select>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="categories__name"> 
+                      <label for="elder">Athlet &gt; 12 years</label>
+                    </td>
+                    <td><i class="fas fa-user"></i></td>
+                    <td>
+                      <select id="elder">
+                        <option value="0">0</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                      </select>
+                    </td>
+                  </tr>
+                </table>
+              </div>
+            </div>
+          </div>
+          <div class="form-group__item board clearfix">
+            <div class="form-group__item__header col-xs-12 col-sm-4">
+              <div class="row">Board Basis</div>
+            </div>
+            <div class="form-group__item__categories col-xs-12 col-sm-8">
+              <div class="row">
+                <table>
+                  <tr>
+                    <td class="categories__name"> 
+                      <label for="bb">BB</label>
+                    </td>
+                    <td class="categories__value">
+                      <select id="bb">
+                        <option value="0">0</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                      </select>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="categories__name"> 
+                      <label for="hb">HB</label>
+                    </td>
+                    <td class="categories__value">
+                      <select id="hb">
+                        <option value="0">0</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                      </select>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="categories__name"> 
+                      <label for="fb">FB</label>
+                    </td>
+                    <td class="categories__value">
+                      <select id="fb">
+                        <option value="0">0</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                      </select>
+                    </td>
+                  </tr>
+                </table>
+              </div>
+            </div>
+          </div>
+          <div class="form-group__item stadium-type clearfix">
+            <div class="form-group__item__header col-xs-12 col-sm-4">
+              <div class="row">Stadium Type</div>
+            </div>
+            <div class="form-group__item__categories col-xs-12 col-sm-8">
+              <div class="row">
+                <table>
+                  <tr>
+                    <td class="categories__name"> 
+                      <input type="radio" name="optionsRadios" id="footbal-fleld" value="option1">
+                    </td>
+                    <td class="categories__value">
+                      <label for="footbal-fleld">football fleld</label>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="categories__name"> 
+                      <input type="radio" name="optionsRadios" id="mini-football" value="option2">
+                    </td>
+                    <td class="categories__value">
+                      <label for="mini-football">mini football</label>
+                    </td>
+                  </tr>
+                </table>
+              </div>
+            </div>
+          </div>
+          <div class="form-group__item cover-type clearfix">
+            <div class="form-group__item__header col-xs-12 col-sm-4">
+              <div class="row">Cover Type</div>
+            </div>
+            <div class="form-group__item__categories col-xs-12 col-sm-8">
+              <div class="row">
+                <table>
+                  <tr>
+                    <td class="categories__name"> 
+                      <input type="radio" name="Radios" id="natural-lawn" value="option1">
+                    </td>
+                    <td class="categories__value">
+                      <label for="natural-lawn">natural lawn</label>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="categories__name"> 
+                      <input type="radio" name="Radios" id="artifcial-lawn" value="option2">
+                    </td>
+                    <td class="categories__value">
+                      <label for="artifcial-lawn">artifcial lawn</label>
+                    </td>
+                  </tr>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="form-group form-group_right col-xs-12 col-md-6">
+          <div class="form-group__item training-schedule clearfix">
+            <div class="form-group__item__header col-xs-12 col-sm-4">
+              <div class="row">Training Schedule</div>
+            </div>
+            <div class="form-group__item__categories col-xs-12 col-sm-8">
+              <div class="row">
+                <label for="datepicker">Date of training</label><br>
+                <input type="text" id="datepicker" value='2016-05-31'>
+              </div>
+            </div>
+          </div>
+          <div class="form-group__item frequency">
+            <input type="radio" name="frequency" id="once-a-day" value="option1" checked>
+            <label class="radio-inline" for="once-a-day">Once a day</label>
+            <input type="radio" name="frequency" id="twice-a-day" value="option2">
+            <label class="radio-inline" for="twice-a-day">Twice a day</label>
+            <input type="radio" name="frequency" id="three-a-day" value="option3">
+            <label class="radio-inline" for="three-a-day">Three times a day</label>
+            <input type="radio" name="frequency" id="more-times" value="option4">
+            <label class="radio-inline frequency_plus" for="more-times">+</label>
+          </div>
+          <div class="form-group__item training-schedule">
+            <table>
+              <tr>
+                <td>Time of training</td>
+                <td> 
+                  <label for="time-start">Start</label>
+                </td>
+                <td>
+                  <select id="time-start">
+                    <option value="9">9:00</option>
+                    <option value="10">10:00</option>
+                    <option value="11">11:00</option>
+                  </select>
+                </td>
+                <td> 
+                  <label for="time-end">End</label>
+                </td>
+                <td>
+                  <select id="time-end">
+                    <option value="11">11:00</option>
+                    <option value="12">12:00</option>
+                    <option value="13">13:00</option>
+                  </select>
+                </td>
+              </tr>
+              <tr>
+                <td>Qantity of flelds</td>
+                <td></td>
+                <td>
+                  <select id="qantity">
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                  </select>
+                </td>
+                <td>
+                  <input type="checkbox" id="all-days">
+                </td>
+                <td>
+                  <label for="all-days">for all days</label>
+                </td>
+              </tr>
+            </table>
+          </div>
+          <div class="form-group__item total-information">
+            <div class="total-information__wrepp">
+              <table>
+                <tr>
+                  <td class="total-information_name">Days</td>
+                  <td class="total-information_value"> 10</td>
+                </tr>
+                <tr>
+                  <td class="total-information_name">Trainings</td>
+                  <td class="total-information_value">8</td>
+                </tr>
+              </table>
+            </div>
+          </div>
+        </div>
+        <div class="submit-box col-xs-12">
+          <input type="submit" value="Search">
+        </div>
+      </form>
+    </main>
+    <footer class="container-fluid">
+      <div class="row">
+        <div class="container">
+          <div class="compani col-xs-12 col-lg-5">
+            <div class="compani_img-wrapper"><img src="img/LogoSmartSport.png" alt="logo Smart Sport"></div>
+            <div class="compani_content-wrapper"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab dolorum eius aliquid quos architecto reprehenderit hic itaque eos vitae voluptatum laboriosam pariatur totam, dolore quo similique libero. Itaque animi ullam laborum quis iusto eligendi aliquam et eveniet doloribus unde, excepturi vero, ipsa quidem dolore, fugiat quasi tempora voluptatum cupiditate enim.</div>
+          </div>
+          <div class="menu col-xs-12 col-sm-6 col-lg-2">
+            <p class="footer__titel">MENU</p>
+            <ul>
+              <li><a href="#">Objects</a></li>
+              <li><a href="#">Hotels</a></li>
+              <li><a href="#">Pakages</a></li>
+              <li><a href="#">Events</a></li>
+              <li class="soon disabled"><a href="#">Tickets<span>Soon</span></a></li>
+              <li class="soon disabled"><a href="#">Transfer<span>Soon</span></a></li>
+            </ul>
+          </div>
+          <div class="contact col-xs-12 col-sm-6 col-lg-3">
+            <p class="footer__titel">CONTACT INFO</p>
+            <p><a href="mailto:sales@smartsport.com"><i class="fas fa-envelope"></i>sales@smartsport.com</a></p>
+            <p><a href="tel:+4915735995225"><i class="fas fa-phone"></i>+49 157 359 952 25</a></p>
+            <p><a href="tel:+74994042608"><i class="fas fa-phone"></i>+7 499 404 26 08</a></p>
+            <p><a href="tel:+380673287366"><i class="fas fa-phone"></i><span>+38 067 328 73 66 Viber, WhatsApp, Telegram</span></a></p>
+            <p><a href="skype:smartport.com"><i class="fab fa-skype"></i>smartport.com</a></p>
+          </div>
+          <div class="social col-xs-12 col-sm-12 col-lg-2">
+            <p class="footer__titel">SOCIAL</p>
+            <div class="social-icone"><a class="facebook" href="#"><i class="fab fa-facebook-f"></i></a><a class="instagram" href="#"><i class="fab fa-linkedin-in"></i></a><a class="vk" href="#"><i class="fab fa-vk"></i></a><a class="you-tube" href="#"><i class="fab fa-youtube"></i></a></div>
+          </div>
+          <div class="copyght col-xs-12">Copyght &copy; Smart Sport 2016</div>
+        </div>
+      </div>
+    </footer>
+    <script>
+      (function($) {
+        jQuery( "#datepicker" ).datepicker();
+
+        jQuery('form select, .cover-type input, .stadium-type input, .training-schedule input').styler();
+      })(jQuery);
+    </script>
+  </body>
+</html>

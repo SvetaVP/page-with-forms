@@ -1,0 +1,306 @@
+doctype html
+html(lang="en")
+    head
+        title football field reservation
+        include modules/head.pug
+    body
+        header.container-fluid
+            div.row
+                div.navigation
+                    div.container
+                        nav.navbar.navbar-default
+                            div.container-fluid
+                                div.navbar-header
+                                    button(type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false")
+                                        span.sr-only Toggle navigation.icon-bar
+                                        span.icon-bar
+                                        span.icon-bar
+                                        span.icon-bar
+                                    a.navbar-brand(href="#")
+                                        img(src="img/LogoSmartSport.png", alt="logo")
+                                div.collapse.navbar-collapse#navbar
+                                    ul.nav.navbar-nav.menu-first-part
+                                        li
+                                            a(href="#")
+                                                span.sr-only
+                                                .
+                                                    Objects
+                                        li
+                                            a(href="#") Hotels
+                                        li
+                                            a(href="#") Pakages
+                                        li
+                                            a(href="#") Events
+                                        li.disabled
+                                            a(href="#") Tickets
+                                        li.disabled
+                                            a(href="#") Transfer
+                                    ul.nav.navbar-nav.navbar-right.menu-second-part
+                                        li.dropdown.language
+                                            a(href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false") Eng
+                                                span.caret
+                                            ul.dropdown-menu
+                                                li
+                                                    a(href="#") Ukr
+                                                li
+                                                    a(href="#") Rus
+                                        li.dropdown.currency
+                                            a(href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false") USD
+                                                span.caret
+                                            ul.dropdown-menu
+                                                li
+                                                    a(href="#") UAH
+                                                li
+                                                    a(href="#") RUB
+                                        li
+                                            a(href="#")
+                                                i.fas.fa-user
+                                                .
+                                                    Sign in
+                                        li.li-icon
+                                            a(href="#")
+                                                i.fas.fa-info-circle
+                                        li.li-icon
+                                            a(href="#")
+                                                i.fas.fa-question-circle
+                div.banner-wrepp
+                    div.banner-wrepp__text.container
+                        div.col-xs-12.col-sm-5
+                            a.btn-back(href="#") Back
+                        div.col-xs-12.col-sm-7
+                            h1 Football
+        main.container-fluid
+            form.container
+                div.form-group.form-group_left.col-xs-12.col-md-6
+                    div.form-group__item.team.clearfix
+                        div.form-group__item__header.col-xs-12.col-sm-4.col-md-3
+                            div.row
+                                .
+                                    Team
+                        div.form-group__item__categories.col-xs-12.col-sm-8.col-md-9
+                            div.row
+                                table
+                                    tr
+                                        td.categories__name 
+                                            label(for="trainer") Trainer
+                                        td
+                                            i.fas.fa-user
+                                        td
+                                            select#trainer
+                                                option(value="2") 2
+                                                option(value="1") 1
+                                                option(value="3") 3
+                                    tr
+                                        td.categories__name 
+                                            label(for="athlet") Athlet
+                                        td
+                                            i.fas.fa-user
+                                        td
+                                            select#athlet
+                                                option(value="9") 9
+                                                option(value="1") 1
+                                                option(value="3") 3
+                                    tr
+                                        td.categories__name 
+                                            label(for="elder") Athlet &gt; 12 years
+                                        td
+                                            i.fas.fa-user
+                                        td
+                                            select#elder
+                                                option(value="0") 0
+                                                option(value="1") 1
+                                                option(value="2") 2
+                    div.form-group__item.board.clearfix
+                        div.form-group__item__header.col-xs-12.col-sm-4
+                            div.row
+                                .
+                                    Board Basis
+                        div.form-group__item__categories.col-xs-12.col-sm-8
+                            div.row
+                                table
+                                    tr
+                                        td.categories__name  
+                                            label(for="bb") BB
+                                        td.categories__value
+                                            select#bb
+                                                option(value="0") 0
+                                                option(value="1") 1
+                                                option(value="2") 2
+                                    tr
+                                        td.categories__name  
+                                            label(for="hb") HB
+                                        td.categories__value
+                                            select#hb
+                                                option(value="0") 0
+                                                option(value="1") 1
+                                                option(value="2") 2
+                                    tr
+                                        td.categories__name  
+                                            label(for="fb") FB
+                                        td.categories__value
+                                            select#fb
+                                                option(value="0") 0
+                                                option(value="1") 1
+                                                option(value="2") 2
+                    div.form-group__item.stadium-type.clearfix
+                        div.form-group__item__header.col-xs-12.col-sm-4
+                            div.row
+                                .
+                                    Stadium Type
+                        div.form-group__item__categories.col-xs-12.col-sm-8
+                            div.row
+                                table
+                                    tr
+                                        td.categories__name  
+                                            input(type="radio" name="optionsRadios" id="footbal-fleld" value="option1")
+                                        td.categories__value
+                                            label(for = "footbal-fleld") football fleld
+                                    tr
+                                        td.categories__name  
+                                            input(type="radio" name="optionsRadios" id="mini-football" value="option2")
+                                        td.categories__value
+                                            label(for = "mini-football") mini football
+                    div.form-group__item.cover-type.clearfix
+                        div.form-group__item__header.col-xs-12.col-sm-4
+                            div.row
+                                .
+                                    Cover Type
+                        div.form-group__item__categories.col-xs-12.col-sm-8
+                            div.row
+                                table
+                                    tr
+                                        td.categories__name  
+                                            input(type="radio" name="Radios" id="natural-lawn" value="option1")
+                                        td.categories__value
+                                            label(for = "natural-lawn") natural lawn
+                                    tr
+                                        td.categories__name  
+                                            input(type="radio" name="Radios" id="artifcial-lawn" value="option2")
+                                        td.categories__value
+                                            label(for = "artifcial-lawn") artifcial lawn
+                div.form-group.form-group_right.col-xs-12.col-md-6
+                    div.form-group__item.training-schedule.clearfix
+                        div.form-group__item__header.col-xs-12.col-sm-4
+                            div.row
+                                .
+                                    Training Schedule
+                        div.form-group__item__categories.col-xs-12.col-sm-8
+                            div.row
+                                label(for="datepicker") Date of training
+                                input#datepicker(type="text" value='2016-05-31')
+                    div.form-group__item.frequency
+                        input#once-a-day(type="radio" name="frequency" value="option1" checked)
+                        label.radio-inline(for="once-a-day") Once a day
+                        input#twice-a-day(type="radio" name="frequency" value="option2")
+                        label.radio-inline(for="twice-a-day") Twice a day
+                        input#three-a-day(type="radio" name="frequency" value="option3")
+                        label.radio-inline(for="three-a-day") Three times a day
+                        input#more-times(type="radio" name="frequency" value="option4")
+                        label.radio-inline.frequency_plus(for="more-times") +
+                    div.form-group__item.training-schedule
+                        table
+                            tr
+                                td Time of training
+                                td 
+                                    label(for="time-start") Start
+                                td
+                                    select(id="time-start")
+                                        option(value="9") 9:00
+                                        option(value="10") 10:00
+                                        option(value="11") 11:00
+                                td 
+                                    label(for="time-end") End
+                                td
+                                    select(id="time-end")
+                                        option(value="11") 11:00
+                                        option(value="12") 12:00
+                                        option(value="13") 13:00
+                            tr
+                                td Qantity of flelds
+                                td
+                                td
+                                    select#qantity
+                                        option(value="2") 2
+                                        option(value="3") 3
+                                        option(value="4") 4
+                                td
+                                    input(type="checkbox" id = "all-days")
+                                td
+                                    label(for="all-days") for all days
+                    div.form-group__item.total-information
+                        div.total-information__wrepp
+                            table
+                                tr
+                                    td.total-information_name Days
+                                    td.total-information_value  10
+                                tr
+                                    td.total-information_name Trainings
+                                    td.total-information_value 8
+                div.submit-box.col-xs-12
+                    input(type="submit" value =  "Search")
+        footer.container-fluid
+            div.row
+                div.container
+                    div.compani.col-xs-12.col-lg-5
+                        div.compani_img-wrapper
+                            img(src="img/LogoSmartSport.png", alt="logo Smart Sport")
+                        div.compani_content-wrapper  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab dolorum eius aliquid quos architecto reprehenderit hic itaque eos vitae voluptatum laboriosam pariatur totam, dolore quo similique libero. Itaque animi ullam laborum quis iusto eligendi aliquam et eveniet doloribus unde, excepturi vero, ipsa quidem dolore, fugiat quasi tempora voluptatum cupiditate enim.
+                    div.menu.col-xs-12.col-sm-6.col-lg-2
+                        p.footer__titel MENU
+                        ul
+                            li
+                                a(href="#") Objects
+                            li
+                                a(href="#") Hotels
+                            li
+                                a(href="#") Pakages
+                            li
+                                a(href="#") Events
+                            li.soon.disabled
+                                a(href="#") Tickets
+                                    span Soon
+                            li.soon.disabled
+                                a(href="#") Transfer
+                                    span Soon
+                    div.contact.col-xs-12.col-sm-6.col-lg-3
+                        p.footer__titel CONTACT INFO
+                        p
+                            a(href="mailto:sales@smartsport.com")
+                                i.fas.fa-envelope
+                                .
+                                    sales@smartsport.com
+                        p
+                            a(href="tel:+4915735995225")
+                                i.fas.fa-phone
+                                .
+                                    +49 157 359 952 25
+                        p
+                            a(href="tel:+74994042608")
+                                i.fas.fa-phone
+                                .
+                                    +7 499 404 26 08
+                        p
+                            a(href="tel:+380673287366")
+                                i.fas.fa-phone
+                                span +38 067 328 73 66 Viber, WhatsApp, Telegram
+                        p
+                            a(href="skype:smartport.com")
+                                i.fab.fa-skype
+                                .
+                                    smartport.com
+                    div.social.col-xs-12.col-sm-12.col-lg-2
+                        p.footer__titel SOCIAL
+                        div.social-icone
+                            a.facebook(href="#")
+                                i.fab.fa-facebook-f
+                            a.instagram(href="#")
+                                i.fab.fa-linkedin-in
+                            a.vk(href="#")
+                                i.fab.fa-vk
+                            a.you-tube(href="#")
+                                i.fab.fa-youtube
+                    div.copyght.col-xs-12 Copyght &copy; Smart Sport 2016
+        
+
+
+
